@@ -1,0 +1,47 @@
+// COLORS
+$bg-blue: #181B23;
+
+ 
+// FONTS
+
+:root {
+    --main-color: #aaaaaa; 
+    --main-color-hover: #f0f0f0;
+    --bg-1: rgba(57, 59, 67, .8);
+    --bg-2: #222222;
+    --bg-3: #222831;
+    --bg-4: #b55400;
+    --bg-5: #3e432e;
+    --bg-6: #616f39;
+    --bg-7: #232931;
+    --bg-8: #393232;
+    --bg-9: #581845;
+    --bg-10: #000000;
+  }
+
+body {
+  background: linear-gradient(180deg, #222831, #b55400, #3e432e, #616f39, #232931, #393232, #581845);
+  background-size: 1400% 1400%;
+
+  -webkit-animation: AnimationName 59s ease infinite;
+  -moz-animation: AnimationName 59s ease infinite;
+  animation: AnimationName 59s ease infinite;
+
+}
+
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:50% 0%}
+  50%{background-position:51% 100%}
+  100%{background-position:50% 0%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:50% 0%}
+  50%{background-position:51% 100%}
+  100%{background-position:50% 0%}
+}
+@keyframes AnimationName {
+  0%{background-position:50% 0%}
+  50%{background-position:51% 100%}
+  100%{background-position:50% 0%}
+}

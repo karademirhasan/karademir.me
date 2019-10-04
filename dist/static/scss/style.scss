@@ -1,0 +1,75 @@
+@import 'normalize', 'variables', 'mixins', 'global', 'responsive';
+
+body {
+    font-family: "Pompiere", cursive;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+
+    @include respond-below(md) {
+        font-size: 14px;
+    }
+}
+
+#app {
+    
+    @include respond-below(md) {
+        display: flex;
+        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+}
+.Left, .Right {
+    @include respond-below(md) {
+        background: transparent!important;
+        width: 100vw!important;
+        height: 50vh!important;
+        
+        .Links {
+            flex-direction: column!important;
+            width: 100%!important;
+            text-align: center!important;
+            .socials {
+                margin-top: 10px!important;
+                justify-content: center!important;
+                a {
+                    font-size: 1.3em!important;
+                }
+            }
+        }
+        .Message {
+            padding: 0 10px!important;
+            h2 {
+                font-size: 2em!important;   
+            }
+            p{
+                font-size: 1.2em!important;
+            }
+        }
+        .content {
+            height: auto!important;
+        }
+        .menu {
+            width: 100%!important;
+        }
+        
+        .Education-list .item, .Experience-list .item {
+            font-size: 1.2em!important;
+            margin-bottom: 10px!important;
+            span {
+                font-size: 1rem!important;
+            }
+            .departmant {
+                display: none;
+            }
+        }
+    }
+}
+
+
+
+.Right {
+    @include respond-below(md) {
+        justify-content: flex-start!important;
+        padding-top: 20px;
+    }
+}
